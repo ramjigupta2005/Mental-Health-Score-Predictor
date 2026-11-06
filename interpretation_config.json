@@ -1,0 +1,40 @@
+{
+  "_comment": "Non-clinical, configurable interpretation framework. Bands are PROPOSED from the dataset's own quartiles (bottom quarter / middle half / top quarter), NOT from any reference document. Set approved=true only after the project owner reviews them.",
+  "approved": false,
+  "bands": [
+    {
+      "max": 5.1,
+      "label": "Signal: strained",
+      "text": "Your estimate is in the lower quarter of students in the training data. Small shifts in sleep, screen time or stress can go a long way."
+    },
+    {
+      "max": 7.1,
+      "label": "Signal: balanced",
+      "text": "Your estimate is in the middle range of students in the training data, with some room to recover and reset."
+    },
+    {
+      "max": 10.01,
+      "label": "Signal: strong",
+      "text": "Your estimate is in the upper quarter of students in the training data. Your habits look well supported - keep it up."
+    }
+  ],
+  "dataset_reference": {
+    "p10": 4.6,
+    "p25": 5.1,
+    "p50": 6.1,
+    "p75": 7.1,
+    "p90": 8.0
+  },
+  "thresholds": {
+    "sleep_min": 7,
+    "sleep_target": 7.5,
+    "usage_high": 6,
+    "usage_target": 3,
+    "unlocks_high": 200,
+    "unlocks_target": 100,
+    "activity_min": 1,
+    "activity_target": 1.5,
+    "study_high": 5
+  },
+  "disclaimer": "This is an informational, non-clinical estimate based on habits. It is not a diagnosis or medical advice. If you're struggling, please talk to someone you trust or a qualified professional."
+}
